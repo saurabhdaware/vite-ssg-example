@@ -1,6 +1,6 @@
-# Hello World Vite SSR
+# Hello World Vite SSG
 
-Vanilla SSR setup using Vite
+Vanilla SSG setup using Vite
 
 ## Install Dependencies
 
@@ -14,12 +14,18 @@ yarn
 node server.js # or yarn dev
 ```
 
-## Prod Build
+## SSR Output
 
 ```sh
 yarn build # builds server and client code
 NODE_ENV=production node server.js # or yarn serve
 ```
 
+## SSG Output
+
+```sh
+yarn generate
+npx serve dist/static # to run static server
+```
 
 Built while following [Vite SSR docs](https://vitejs.dev/guide/ssr.html)
